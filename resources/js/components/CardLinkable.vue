@@ -1,5 +1,5 @@
 <template>
-    <router-link tag="a" :to="this.url" class="cursor-pointer no-underline">
+    <router-link tag="a" :to="this.url" class="cursor-pointer no-underline h-full block">
         <card-heading :title="this.title" :subtitle="this.subtitle" :theme="theme" :hover="hover" :html="html"></card-heading>
     </router-link>
 </template>

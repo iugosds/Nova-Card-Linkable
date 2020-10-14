@@ -1,5 +1,5 @@
 <template>
-    <a :href="this.url" :target="this.target" class="cursor-pointer no-underline">
+    <a :href="this.url" :target="this.target" class="cursor-pointer no-underline h-full block">
         <card-heading :title="this.title" :subtitle="this.subtitle" :theme="theme" :hover="hover" :html="html"></card-heading>
     </a>
 </template>
