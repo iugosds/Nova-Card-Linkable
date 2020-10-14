@@ -1,6 +1,6 @@
 <template>
     <router-link tag="a" :to="this.url" class="cursor-pointer no-underline">
-        <card-heading :title="this.title" :subtitle="this.subtitle" :theme="theme" :hover="hover"></card-heading>
+        <card-heading :title="this.title" :subtitle="this.subtitle" :theme="theme" :hover="hover" :html="html"></card-heading>
     </router-link>
 </template>
 
@@ -23,6 +23,9 @@ export default {
         },
         hover() {
             return this.card.hover
+        },
+        html() {
+            return this.card.html
         },
     },
 }

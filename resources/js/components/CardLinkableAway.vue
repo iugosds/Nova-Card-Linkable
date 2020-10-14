@@ -1,6 +1,6 @@
 <template>
     <a :href="this.url" :target="this.target" class="cursor-pointer no-underline">
-        <card-heading :title="this.title" :subtitle="this.subtitle" :theme="theme" :hover="hover"></card-heading>
+        <card-heading :title="this.title" :subtitle="this.subtitle" :theme="theme" :hover="hover" :html="html"></card-heading>
     </a>
 </template>
 
@@ -26,6 +26,9 @@ export default {
         },
         hover() {
             return this.card.hover
+        },
+        html() {
+            return this.card.html
         },
     },
 }

@@ -49,6 +49,13 @@ abstract class AbstractLinkable extends Card
     }
 
     /**
+     * Html content, replaces title and subtitle
+     */
+    public function html($html) {
+        return $this->withMeta(['html' => $html]);
+    }
+
+    /**
      * How does the card look like
      */
     public function theme($background, $text) {
