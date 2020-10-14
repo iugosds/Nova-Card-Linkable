@@ -1,6 +1,7 @@
 <template>
     <card class="flex flex-col items-center justify-center p-6" :class="this.style">
-        <template v-if="html" v-html="html">
+        <template v-if="html">
+            <div v-html="html"></div>
         </template>
         <template v-else>
             <h1 class="text-3xl font-light" v-text="this.title"></h1>
